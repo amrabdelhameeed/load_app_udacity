@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        tools:context=".DetailActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/detail_motion_scene"
+        tools:showIn="@layout/activity_detail"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/big_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/biggest_margin"
+            android:text="title Of The File"
+            android:id="@+id/repository_name_title_text_view"
+            style="@style/titleStyle"
+            android:textSize="@dimen/smallText"
+            android:layout_width="match_parent"/>
+
+        <TextView
+            android:layout_marginEnd="@dimen/margin21"
+            android:layout_marginTop="@dimen/margin18"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/biggest_margin"
+            app:layout_constraintTop_toBottomOf="@id/repository_name_title_text_view"
+            android:text="@string/file_name"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:id="@+id/repository_name_text_view"
+            style="@style/titleStyle" />
+
+        <TextView
+            android:text="Status"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/biggest_margin"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/titleStyle"
+            app:layout_constraintTop_toBottomOf="@id/repository_name_text_view"
+            android:textSize="@dimen/smallText"
+            android:layout_marginTop="@dimen/biggest_margin"
+            android:id="@+id/status_title_text_view"/>
+
+        <TextView
+            android:text="successfully downloaded"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/titleStyle"
+            android:layout_width="0dp"
+            android:layout_marginEnd="@dimen/margin21"
+            android:layout_marginTop="@dimen/margin21"
+            app:layout_constraintTop_toBottomOf="@id/status_title_text_view"
+            android:layout_marginStart="@dimen/biggest_margin"
+            android:textAlignment="textStart"
+            android:id="@+id/status_text_view"/>
+        <androidx.appcompat.widget.AppCompatButton
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="25dp"
+            android:textColor="@color/cardview_light_background"
+            style="@style/titleStyle"
+            android:layout_marginHorizontal="@dimen/margin21"
+            android:textAlignment="center"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:text="@string/ok"
+            android:id="@+id/ok_button"
+            android:layout_marginBottom="@dimen/margin18"/>
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>

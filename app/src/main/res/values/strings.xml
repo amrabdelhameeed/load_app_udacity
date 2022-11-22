@@ -1,0 +1,15 @@
+<resources>
+    <string name="file_name">Glide - Image Loading Library by BumpTech</string>
+    <string name="notification_channel_description">LoadApp description</string>
+    <string name="ok">OK</string>
+    <string name="download_image">Download image</string>
+    <string name="notification_title">Udacity: Android Kotlin Nanodegree </string>
+    <string name="notification_channel_name">LoadApp</string>
+    <string name="status">Success</string>
+    <string name="notification_channel_id" >load_app_channel</string>
+    <string name="app_description">download manager</string>
+    <string name="retrofit_title">Retrofit - Type-safe HTTP client for Android and Java by Square, Inc.</string>
+    <string name="load_app_title">LoadApp - Current repository by Udacity</string>
+    <string name="app_name">Load App</string>
+    <string name="glide_title">Glide - Image Loading Library by BumpTech</string>
+</resources>

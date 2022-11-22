@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="textSize">20sp</dimen>
+    <dimen name="margin12">12dp</dimen>
+    <dimen name="margin18">18dp</dimen>
+    <dimen name="margin21">21dp</dimen>
+    <dimen name="big_margin">34dp</dimen>
+    <dimen name="biggest_margin">42dp</dimen>
+    <dimen name="smallText">19sp</dimen>
+</resources>

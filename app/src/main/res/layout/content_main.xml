@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        tools:showIn="@layout/activity_main"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/main_layout"
+        tools:context=".MainActivity"
+        android:layout_width="match_parent">
+        <ImageView
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_download"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/download_image"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="200dp"
+            android:background="@color/color_dark"
+            android:id="@+id/download_image"
+            android:layout_width="0dp" />
+        <RadioGroup
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/download_image"
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toTopOf="@+id/download_button"
+            android:layout_marginHorizontal="@dimen/margin18"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/radio_group">
+            <RadioButton
+                android:id="@+id/glide_radio_button"
+                style="@style/titleStyle"
+                android:layout_margin="@dimen/margin12"
+                android:text="@string/glide_title" />
+            <RadioButton
+                android:id="@+id/load_app_radio_button"
+                style="@style/titleStyle"
+                android:layout_margin="@dimen/margin12"
+                android:text="@string/load_app_title" />
+            <RadioButton
+                android:id="@+id/retrofit_radio_button"
+                style="@style/titleStyle"
+                android:layout_margin="@dimen/margin12"
+                android:text="@string/retrofit_title" />
+        </RadioGroup>
+        <com.example.load_app_udacity.LoadingButton
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_bias="0.5"
+            style="@style/titleStyle"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group"
+            android:layout_margin="@dimen/margin21"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="70dp"
+            android:id="@+id/download_button"
+            app:text="download"
+            app:layout_constraintStart_toStartOf="parent"
+            app:bgButton="@color/colorPrimary"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
